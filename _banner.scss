@@ -1,0 +1,50 @@
+.banner_part{
+    background-color: rgb(197, 221, 164);
+    padding-top: 100px;
+    width: 100%;
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        .banner_text{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            padding-top: 50px;
+            .text_flex{
+                display: flex;
+                column-gap: 10px;
+               align-items: center;
+               justify-content: flex-start;
+                i{
+                    color: $background_colour;
+                    font-size: 20px;
+                    text-align: center;
+
+                }
+                span{
+                    @include font_work($font-family , 25px , 500, black);
+                }
+                h1{
+                    @include font_work($font-family, 30px, 700 , black);
+                }
+                form input{
+                    width: 30% !important;
+                }
+                p{
+                    @include font_work($font-family , 18px, 400 , black);
+                }
+     
+
+            }
+        }
+        .banner_picture{
+           margin-top: -20px;
+            img{
+                
+                width: 500px;
+                height: 550px;
+            }
+        }
+    }
+}
